@@ -1,53 +1,33 @@
-#include <zephyr.h>             // Funções básicas do Zephyr (ex: k_msleep)
-#include <device.h>             // API  para obter e usar dispositivos
-#include <drivers/gpio.h>       // API para controle de GPIO
+#include <zephyr/kernel.h>
+#include <zephyr/device.h>
+#include <zephyr/drivers/gpio.h>
+#include <pwm_z42.h>
 
-#define LED_PORT       "GPIO_1" // Nome do controlador GPIO (label no .pio\build\frdm_kl25z\zephyr\zephyr.dts)
-#define LED_VRM        18       // Pino PTB18 onde está o LED vermelho
-#define LED_VD       19     
-#define SLEEP_TIME_MS  500    // Intervalo de piscar (milissegundos)
+#define TPM_MODULE 1000
 
-typedef enum {
-	VERDE,
-	AMARELO,
-	VERMELHO
-} EstadoSemaforo;
-
-void main(void)
+int main(void)
 {
-    const struct device *port = device_get_binding(LED_PORT);
+    pwm_tpm_Init(TPM2, TPM_PLLFLL, TPM_MODULE, TPM_CLK, PS_128, EDGE_PWM);
 
-    gpio_pin_configure(port, LED_VD, GPIO_OUTPUT_ACTIVE);
-    gpio_pin_configure(port, LED_VRM, GPIO_OUTPUT_ACTIVE);
-	
-	EstadoSemaforo estadoAtual = VERDE;
-	
-    while (1) {
-		switch (estadoAtual) {
-			case VERDE:
-				// Ligar o led verde e delay
-				gpio_pin_set(port, LED_VD, 0);
-				k_msleep(4000);
-				//DESLIGAR LED VERDE
-				gpio_pin_set(port, LED_VD, 1);
-				estadoAtual = AMARELO;
-				break;
-			case AMARELO:
-				// Ligar o led amarelo e delay
-				gpio_pin_set(port, LED_VD, 0);
-				gpio_pin_set(port, LED_VRM, 0);
-				k_msleep(3000);
-				gpio_pin_set(port, LED_VD, 1);
-				gpio_pin_set(port, LED_VRM, 1);
-				estadoAtual = VERMELHO;
-				break;
-			case VERMELHO:
-				// Ligar o led vermelho e delay
-				gpio_pin_set(port, LED_VRM, 0);
-				k_msleep(4000);
-				estadoAtual = VERDE;
-				gpio_pin_set(port, LED_VRM, 1);
-				break;
-		}
+    pwm_tpm_Ch_Init(TPM2, 0, TPM_PWM_H, GPIOB, 18);
+    pwm_tpm_Ch_Init(TPM2, 1, TPM_PWM_H, GPIOB, 19);
+
+    pwm_tpm_CnV(TPM2, 0, 0);
+    pwm_tpm_CnV(TPM2, 1, 600);
+
+    for (;;)
+    {
+        k_msleep(1000);
+
+        pwm_tpm_CnV(TPM2, 0, 0);
+        pwm_tpm_CnV(TPM2, 1, 600);
+
+        k_msleep(1000);
+
+        pwm_tpm_CnV(TPM2, 0, 1000);
+        pwm_tpm_CnV(TPM2, 1, 1000);
+
     }
+
+    return 0;
 }
