@@ -18,7 +18,7 @@ int main(void)
     for (;;)
     {
         k_msleep(1000);
-
+        
         pwm_tpm_CnV(TPM2, 0, 0);
         pwm_tpm_CnV(TPM2, 1, 600);
 
