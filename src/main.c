@@ -17,11 +17,11 @@ pwm_tpm_CnV(TPM2, 1, 0);
 
     for (;;)
     {
-        k_msleep(1000);
+        k_msleep(2000);
 
         pwm_tpm_CnV(TPM2, 1, 0);
 
-         k_msleep(1000);
+         k_msleep(2000);
 
         pwm_tpm_CnV(TPM2, 1, 1000);
     
