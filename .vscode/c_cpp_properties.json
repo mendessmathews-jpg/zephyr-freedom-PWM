@@ -10,7 +10,6 @@
             "includePath": [
                 "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/include",
                 "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/src",
-                "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/lib/pwm",
                 "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/.pio/build/frdm_kl25z/zephyr/include/generated/zephyr",
                 "C:/Users/Aluno/.platformio/packages/framework-zephyr/include",
                 "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/.pio/build/frdm_kl25z/zephyr/include/generated",
@@ -25,6 +24,7 @@
                 "C:/Users/Aluno/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/common",
                 "C:/Users/Aluno/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/lpsci",
                 "C:/Users/Aluno/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/port",
+                "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/lib/pwm",
                 ""
             ],
             "browse": {
@@ -32,7 +32,6 @@
                 "path": [
                     "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/include",
                     "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/src",
-                    "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/lib/pwm",
                     "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/.pio/build/frdm_kl25z/zephyr/include/generated/zephyr",
                     "C:/Users/Aluno/.platformio/packages/framework-zephyr/include",
                     "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/.pio/build/frdm_kl25z/zephyr/include/generated",
@@ -47,6 +46,7 @@
                     "C:/Users/Aluno/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/common",
                     "C:/Users/Aluno/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/lpsci",
                     "C:/Users/Aluno/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/port",
+                    "C:/Users/Aluno/Documents/PlatformIO/Projects/260408-152429-zephyr-blink/lib/pwm",
                     ""
                 ]
             },
