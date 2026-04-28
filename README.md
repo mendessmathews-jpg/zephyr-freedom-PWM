@@ -95,4 +95,17 @@ O foco é validar se o sinal PWM está saindo corretamente do microcontrolador a
 | 4.1 | Teste Motor Único | Apenas um motor deve variar velocidade usando um pino PWM. |
 | 4.2 | Teste Bi-Motor | Ambos os motores operando em sincronia para movimento em linha reta. |
 
----
+
+
+<img width="426" height="240" alt="Video Project" src="https://github.com/user-attachments/assets/b995a4dc-9962-4355-8d8d-70bee4e4f423" />
+
+<img width="426" height="240" alt="Video laranja piscando" src="https://github.com/user-attachments/assets/982f9839-f6d2-43a6-aba1-5d369ef39a63" />
+
+
+
+
+-
+
+<img width="426" height="240" alt="Video verde piscando 2000ms4" src="https://github.com/user-attachments/assets/6b8ebf6a-1aab-4392-9fa0-b275afe85b72" />
+
+<img width="426" height="240" alt="verde piscando" src="https://github.com/user-attachments/assets/c615c96c-7a82-4956-9294-b97d910c1483" />
