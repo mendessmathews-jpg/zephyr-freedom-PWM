@@ -109,8 +109,9 @@ O foco é validar se o sinal PWM está saindo corretamente do microcontrolador a
 <img width="426" height="240" alt="Video verde piscando 2000ms4" src="https://github.com/user-attachments/assets/6b8ebf6a-1aab-4392-9fa0-b275afe85b72" />
 
 <img width="426" height="240" alt="verde piscando" src="https://github.com/user-attachments/assets/c615c96c-7a82-4956-9294-b97d910c1483" />
+<img width="426" height="240" alt="atualização" src="https://github.com/user-attachments/assets/a8d7bf57-d29e-4a2f-a537-e08b0a5ac447" />
 
-<img width="426" height="240" alt="Sensor-infravermelho" src="https://github.com/user-attachments/assets/ec3f11b7-b2a9-4870-93e9-c877cc9974da" />
+<img width="426" height="240" alt="Sensoeres-carrinho" src="https://github.com/user-attachments/assets/72000000-d872-4f4e-830b-f5c3a3168b50" />
 
 
 <img width="426" height="240" alt="Motor funcionando" src="https://github.com/user-attachments/assets/797d4392-dd15-4835-ae7b-74582c40b494" />
