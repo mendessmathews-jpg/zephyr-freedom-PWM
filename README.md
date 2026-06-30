@@ -114,4 +114,8 @@ O foco é validar se o sinal PWM está saindo corretamente do microcontrolador a
 <img width="426" height="240" alt="Sensoeres-carrinho" src="https://github.com/user-attachments/assets/72000000-d872-4f4e-830b-f5c3a3168b50" />
 
 
+
+
+https://github.com/user-attachments/assets/3451e725-8791-4e68-a922-663a4b7e4a52
+
 <img width="426" height="240" alt="Motor funcionando" src="https://github.com/user-attachments/assets/797d4392-dd15-4835-ae7b-74582c40b494" />
